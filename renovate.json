@@ -6,14 +6,17 @@
   "semanticCommits": "enabled",
   "recreateWhen": "always",
   "rangeStrategy": "bump",
+  "updatePinnedDependencies": false,
   "packageRules": [
     {
-      "matchPackageNames": ["react"],
+      "matchPackagePatterns": ["^react"],
       "matchUpdateTypes": ["patch", "minor"],
+      "groupName": "react packages",
+      "labels": ["sdu-deps"],
       "enabled": true
     },
     {
-      "excludePackageNames": ["react"],
+      "excludePackagePatterns": ["^react"],
       "enabled": false
     }
   ]
