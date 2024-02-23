@@ -9,7 +9,6 @@
     {
       "matchPackageNames": ["react"],
       "matchUpdateTypes": ["patch", "minor"],
-      "rangeStrategy": "bump",
       "enabled": true
     }
   ]
