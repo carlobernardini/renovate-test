@@ -3,6 +3,11 @@
   "enabledManagers": ["npm"],
   "packageRules": [
     {
+      "matchPackagePatterns": ["*"],
+      "excludePackageNames": ["react"],
+      "enabled": false
+    },
+    {
       "matchPackageNames": ["react"],
       "matchUpdateTypes": ["patch", "minor"],
       "enabled": true
