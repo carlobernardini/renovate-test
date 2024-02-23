@@ -1,8 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "enabledManagers": ["npm"],
-  "repositories": ["renovate-test"],
-  "onboarding": false,
   "packageRules": [
     {
       "matchPackagePatterns": ["*"],

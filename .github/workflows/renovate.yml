@@ -5,6 +5,10 @@ on:
     branches:
       - master
 
+env:
+  RENOVATE_ONBOARDING: false
+  RENOVATE_REPOSITORIES: renovate-test
+
 jobs:
   renovate:
     runs-on: ubuntu-latest
@@ -14,5 +18,4 @@ jobs:
       - name: Self-hosted Renovate
         uses: renovatebot/github-action@v40.1.0
         with:
-          configurationFile: renovate.json
           token: ${{ secrets.RENOVATE_TOKEN }}
