@@ -1,6 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "enabledManagers": ["npm"],
+  "prConcurrentLimit": 5,
+  "prHourlyLimit": 20,
   "packageRules": [
     {
       "matchPackagePatterns": ["*"],
