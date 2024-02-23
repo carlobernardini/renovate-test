@@ -3,11 +3,15 @@
   "enabledManagers": ["npm"],
   "prConcurrentLimit": 5,
   "prHourlyLimit": 20,
+  "semanticCommits": "enabled",
   "packageRules": [
     {
-      "matchPackagePatterns": ["*"],
-      "excludePackageNames": ["react"],
+      "matchPackageNames": ["react"],
       "matchUpdateTypes": ["patch", "minor"],
+      "enabled": true
+    },
+    {
+      "excludePackageNames": ["react"],
       "enabled": false
     }
   ]
