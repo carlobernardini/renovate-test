@@ -1,0 +1,16 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "enabledManagers": ["npm"],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["*"],
+      "enabled": false
+    },
+    {
+      "matchPackageNames": ["react"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "rangeStrategy": "bump",
+      "enabled": true
+    }
+  ]
+}
