@@ -4,6 +4,7 @@
   "prConcurrentLimit": 5,
   "prHourlyLimit": 20,
   "semanticCommits": "enabled",
+  "recreateWhen": "always",
   "packageRules": [
     {
       "matchPackageNames": ["react"],
