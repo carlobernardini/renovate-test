@@ -5,12 +5,8 @@
     {
       "matchPackagePatterns": ["*"],
       "excludePackageNames": ["react"],
-      "enabled": false
-    },
-    {
-      "matchPackageNames": ["react"],
       "matchUpdateTypes": ["patch", "minor"],
-      "enabled": true
+      "enabled": false
     }
   ]
 }
