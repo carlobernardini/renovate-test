@@ -5,6 +5,7 @@
   "prHourlyLimit": 20,
   "semanticCommits": "enabled",
   "recreateWhen": "always",
+  "rangeStrategy": "bump",
   "packageRules": [
     {
       "matchPackageNames": ["react"],
