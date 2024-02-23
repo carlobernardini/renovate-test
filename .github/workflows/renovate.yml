@@ -7,7 +7,7 @@ on:
 
 env:
   RENOVATE_ONBOARDING: false
-  RENOVATE_REPOSITORIES: renovate-test
+  RENOVATE_REPOSITORIES: carlobernardini/renovate-test
   LOG_LEVEL: debug
 
 jobs:
@@ -17,6 +17,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Self-hosted Renovate
-        uses: renovatebot/github-action@v40.1.0
+        uses: renovatebot/github-action@v40.1.1
         with:
           token: ${{ secrets.RENOVATE_TOKEN }}
